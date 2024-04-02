@@ -1,4 +1,4 @@
-# username stored as a tfvars environment variable on my local machine
+/*# username stored as a tfvars environment variable on my local machine
 variable "username" {
   description = "Username of the master user"
   type        = string
@@ -10,4 +10,4 @@ variable "password" {
   description = "Password of the master user"
   type        = string
   sensitive   = true
-}
+}*/
