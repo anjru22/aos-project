@@ -5,7 +5,7 @@ resource "aws_lb" "fleetcart-alb" {
   ip_address_type            = "ipv4"
   security_groups            = [aws_security_group.alb-sg.id]
   subnets                    = [aws_subnet.pub-subnet-az1.id, aws_subnet.pub-subnet-az2.id]
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
   tags = {
     Name = "FleetCart ALB"

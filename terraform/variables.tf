@@ -1,13 +1,11 @@
-/*# username stored as a tfvars environment variable on my local machine
-variable "username" {
-  description = "Username of the master user"
+variable "domain_name" {
+  default     = "andrewchu.us"
+  description = "domain name"
   type        = string
-  sensitive   = true
 }
 
-# password stored as a tfvars environment variable on my local machine
-variable "password" {
-  description = "Password of the master user"
+variable "record_name" {
+  default     = "fleetcart"
+  description = "record name"
   type        = string
-  sensitive   = true
-}*/
+}
