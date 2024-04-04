@@ -9,3 +9,9 @@ variable "record_name" {
   description = "record name"
   type        = string
 }
+
+variable "ami_image" {
+  default     = "ami-070136c711760a91a"
+  description = "ami of production fleetcart web server"
+  type        = string
+}

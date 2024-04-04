@@ -13,13 +13,3 @@ resource "aws_lb_target_group" "elb-tg" {
     unhealthy_threshold = 10            #2 (Original Value)
   }
 }
-
-resource "aws_lb_target_group_attachment" "target-group-attachment-az1" {
-  target_group_arn = aws_lb_target_group.elb-tg.arn
-  target_id        = aws_instance.fleetcart-az1.id
-}
-
-resource "aws_lb_target_group_attachment" "target-group-attachment-az2" {
-  target_group_arn = aws_lb_target_group.elb-tg.arn
-  target_id        = aws_instance.fleetcart-az2.id
-}
